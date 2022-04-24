@@ -13,7 +13,7 @@
   background-color: rgba(0, 0, 0, 0.6);
 }
 .topContent {
-  margin-top: 10em;
+  margin-top: 15em;
 }
 .topTitle {
   font-family: 'Montserrat', sans-serif;
@@ -94,4 +94,30 @@
   font-weight: 700;
   color: #939ba7 !important;
   font-size: 1.5em;
+}
+.navBackground {
+  transition: background-color 400ms linear;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+.navBackgroundScroll {
+  -webkit-transition: background-color 400ms linear;
+  -moz-transition: background-color 400ms linear;
+  -o-transition: background-color 400ms linear;
+  transition: background-color 400ms linear;
+  background-color: #fff !important;
+}
+.navItem {
+  text-decoration: none !important;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  color: #fff !important;
+  font-size: 16px;
+}
+
+.navItemScroll {
+  text-decoration: none !important;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  color: #000 !important;
+  font-size: 16px;
 }
