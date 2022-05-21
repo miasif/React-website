@@ -7,17 +7,14 @@ class Analysis extends Component {
     super();
     this.state = {
       data: [
-        { Techonology: 'React', Project: 100 },
-        { Techonology: 'Angular', Project: 90 },
-        { Techonology: 'Node', Project: 95 },
-        { Techonology: 'MongoDB', Project: 85 },
-        { Techonology: 'Express', Project: 80 },
-        { Techonology: 'Bootstrap', Project: 70 },
-        { Techonology: 'HTML', Project: 80 },
-        { Techonology: 'CSS', Project: 60 },
-        { Techonology: 'Javascript', Project: 100 },
-        { Techonology: 'Jquery', Project: 75 },
-        { Techonology: 'React Native', Project: 65 },
+        { Techonology: 'React', Projects: 100 },
+        { Techonology: 'Angular', Projects: 90 },
+        { Techonology: 'Node', Projects: 95 },
+        { Techonology: 'MongoDB', Projects: 85 },
+        { Techonology: 'Express', Projects: 80 },
+        { Techonology: 'Bootstrap', Projects: 70 },
+        { Techonology: 'HTML', Projects: 80 },
+        { Techonology: 'CSS', Projects: 60 },
       ],
     };
   }
@@ -34,7 +31,7 @@ class Analysis extends Component {
               <h1>Barchart</h1>
             </Col>
             <Col
-              style={{ width: '100%', height: '300%' }}
+              style={{ width: '100%', height: '300px' }}
               lg={6}
               md={12}
               sm={12}
@@ -43,7 +40,7 @@ class Analysis extends Component {
                 <BarChart width={100} height={300} data={this.state.data}>
                   <XAxis dataKey="Techonology" />
                   <Tooltip />
-                  <Bar dataKey="Project" fill={blue}></Bar>
+                  <Bar dataKey="Projects" fill={blue}></Bar>
                 </BarChart>
               </ResponsiveContainer>
             </Col>
