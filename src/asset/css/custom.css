@@ -139,6 +139,10 @@
 
 .countNumber {
   color: #ffffff;
+  background-color: rgba(27, 91, 92, 0.7);
+}
+.countNumber {
+  color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 40px;
@@ -178,5 +182,12 @@
 }
 .iconProject {
   color: #fff;
+  font-size: 2em;
+  font-family: 'RaleWay', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+}
+.countSection {
+  color: #ffff;
   font-size: 2em;
 }
