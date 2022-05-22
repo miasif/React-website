@@ -292,3 +292,15 @@
   font-weight: 600;
   font-size: 1.7em;
 }
+.footerSection {
+  margin-top: 5rem;
+  box-shadow: 0 0 8px 0;
+  background-color: #051b35;
+}
+.footerName {
+  color: #fff;
+  margin-top: 1rem;
+  font-family: 'RaleWay', sans-serif;
+  font-weight: 600;
+  font-size: 1.7em;
+}
