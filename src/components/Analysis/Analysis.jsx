@@ -27,11 +27,8 @@ class Analysis extends Component {
           <h1 className="serviceMainTitle">TECHNOLOGY USED</h1>
           <div className="button"></div>
           <Row>
-            <Col lg={6} md={12} sm={12}>
-              <h1>Barchart</h1>
-            </Col>
             <Col
-              style={{ width: '100%', height: '300px' }}
+              style={{ width: '50%', height: '300px' }}
               lg={6}
               md={12}
               sm={12}

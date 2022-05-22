@@ -194,3 +194,13 @@
   transform: scale(1.05);
   box-shadow: 0 13px 30px -5px;
 }
+.courseImg {
+  width: 100%;
+}
+.courseViewMore {
+  color: #04336d;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  text-decoration: none;
+}
