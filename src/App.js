@@ -1,11 +1,14 @@
 import React from 'react';
 import Analysis from './components/Analysis/Analysis';
+import ClientReview from './components/ClientReview/ClientReview';
 import Courses from './components/Courses/Courses';
 import RecentProject from './components/RecentProject/RecentProject';
 import Services from './components/Services/Services';
 import Summary from './components/Summary/Summary';
 import TopBanner from './components/Topbanner/TopBanner';
 import TopNavigation from './components/TopNavigation/TopNavigation';
+import Video from './components/Video/Video';
+
 function App() {
   return (
     <div>
@@ -16,6 +19,9 @@ function App() {
       <Summary />
       <RecentProject />
       <Courses />
+      <Video />
+      <ClientReview />
+      <Services />
     </div>
   );
 }

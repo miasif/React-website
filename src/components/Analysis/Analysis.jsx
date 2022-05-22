@@ -23,8 +23,8 @@ class Analysis extends Component {
     var blue = '#051b35';
     return (
       <Fragment>
-        <Container className="text-center">
-          <h1 className="serviceMainTitle">TECHNOLOGY USED</h1>
+        <Container>
+          <h1 className="text-center serviceMainTitle">TECHNOLOGY USED</h1>
           <div className="button"></div>
           <Row>
             <Col
@@ -51,11 +51,13 @@ class Analysis extends Component {
                 <br></br>
                 <br></br>
                 It has survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.
+                electronic typesetting, remaining essentially unchanged.
+                <br></br>
+                <br></br>
+                It was popularised in the 1960s with the release of Letraset
+                sheets containing Lorem Ipsum passages, and more recently with
+                desktop publishing software like Aldus PageMaker including
+                versions of Lorem Ipsum.
               </p>
             </Col>
           </Row>
