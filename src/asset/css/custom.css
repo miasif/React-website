@@ -258,3 +258,37 @@
   font-weight: 400;
   font-size: 1.2em;
 }
+.aboutMeImg {
+  width: 550px;
+  height: 550px;
+  background-color: #051b35;
+  border-radius: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  float: right;
+}
+.aboutImg {
+  height: 100%;
+  margin-top: 210px;
+}
+.aboutMeBody {
+  width: 100%;
+  height: 100%;
+  padding-left: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10rem;
+}
+.aboutMeTitle {
+  color: #051b35;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+}
+.aboutMeDetails {
+  color: #051b35;
+  font-family: 'RaleWay', sans-serif;
+  font-weight: 600;
+  font-size: 1.7em;
+}

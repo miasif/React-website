@@ -1,4 +1,5 @@
 import React from 'react';
+import AboutMe from './components/AboutMe/AboutMe';
 import Analysis from './components/Analysis/Analysis';
 import ClientReview from './components/ClientReview/ClientReview';
 import Courses from './components/Courses/Courses';
@@ -21,6 +22,7 @@ function App() {
       <Courses />
       <Video />
       <ClientReview />
+      <AboutMe />
       <Services />
     </div>
   );
