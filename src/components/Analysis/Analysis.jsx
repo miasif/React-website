@@ -28,7 +28,7 @@ class Analysis extends Component {
           <div className="button"></div>
           <Row>
             <Col
-              style={{ width: '50%', height: '300px' }}
+              style={{ width: '100', height: '300px' }}
               lg={6}
               md={12}
               sm={12}
