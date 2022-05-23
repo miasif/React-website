@@ -304,3 +304,57 @@
   font-weight: 600;
   font-size: 1.7em;
 }
+.socialContainer {
+  margin-top: 30px;
+}
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+a.social:hover {
+  transform: translateY(-2px);
+  color: #91e660;
+}
+a.facebook {
+  color: #ffff;
+}
+a.youtube {
+  color: #ffff;
+}
+a.twitter {
+  color: #ffff;
+}
+.footerDesc {
+  color: #ffff;
+  margin-top: 1rem;
+  font-family: 'RaleWay', sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+.footerLink {
+  text-decoration: none;
+  font-family: 'RaleWay', sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  color: #fff;
+}
+.footerLink:hover {
+  text-decoration: none;
+  color: #91e660;
+}
+.footerBottom {
+  padding: 20px 20px 20px 20px;
+  background-color: #002c61;
+}
+.copyRightLink {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+.copyRightLink:hover {
+  text-decoration: none;
+  color: #fff;
+}

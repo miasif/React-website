@@ -25,8 +25,6 @@ function App() {
       <ClientReview />
       <AboutMe />
       <Footer />
-
-      <Services />
     </div>
   );
 }

@@ -25,7 +25,7 @@ export class Courses extends Component {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a className="courseViewMore float-left" href="#">
+                  <a className="courseViewMore float-left" href="/courses">
                     View Details
                   </a>
                 </Col>
@@ -44,7 +44,7 @@ export class Courses extends Component {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a className="courseViewMore float-left" href="#">
+                  <a className="courseViewMore float-left" href="/courses">
                     View Details
                   </a>
                 </Col>
@@ -67,7 +67,7 @@ export class Courses extends Component {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a className="courseViewMore float-left" href="#">
+                  <a className="courseViewMore float-left" href="/courses">
                     View Details
                   </a>
                 </Col>
@@ -86,7 +86,7 @@ export class Courses extends Component {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a className="courseViewMore float-left" href="#">
+                  <a className="courseViewMore float-left" href="/courses">
                     View Details
                   </a>
                 </Col>
