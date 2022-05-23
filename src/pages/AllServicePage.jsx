@@ -5,7 +5,7 @@ import PageTop from '../components/PageTop/PageTop';
 import Services from '../components/Services/Services';
 import TopNavigation from '../components/TopNavigation/TopNavigation';
 
-export class AllService extends Component {
+export class AllServicePage extends Component {
   render() {
     return (
       <>
@@ -19,4 +19,4 @@ export class AllService extends Component {
   }
 }
 
-export default AllService;
+export default AllServicePage;
