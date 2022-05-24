@@ -8,6 +8,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 export class Footer extends Component {
   render() {
@@ -57,32 +58,34 @@ export class Footer extends Component {
             </Col>
             <Col lg={3} md={6} sm={12} className="p-5 text-justify">
               <h2 className="footerName">Information</h2>
-              <a href="/about" className="footerLink">
+              <Link className="footerLink" to="/about">
                 About Me
-              </a>
-              <br />
-              <a href="/about" className="footerLink">
-                Company Policy
-              </a>
-              <br />
-              <a href="/about" className="footerLink">
+              </Link>
+              <br></br>
+              <Link className="footerLink" to="/about">
+                Company Profile
+              </Link>
+              <br></br>
+              <Link className="footerLink" to="/contact">
                 Contact Us
-              </a>
+              </Link>
+              <br></br>
               <br />
             </Col>
             <Col lg={3} md={6} sm={12} className="p-5 text-justify">
               <h2 className="footerName ">Policy</h2>
-              <a href="/about" className="footerLink">
+              <Link to="/refund" className="footerLink">
                 Refund Policy
-              </a>
+              </Link>
               <br />
-              <a href="/about" className="footerLink">
+              <Link to="/terms" className="footerLink">
                 Terms And Condition
-              </a>
+              </Link>
               <br />
-              <a href="/about" className="footerLink">
-                Privacy Policy
-              </a>
+              <Link className="footerLink" to="/privacy">
+                Privacy And Policy
+              </Link>
+              <br></br>
               <br />
             </Col>
           </Row>

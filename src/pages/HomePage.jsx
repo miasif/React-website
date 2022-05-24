@@ -10,13 +10,15 @@ import TopBanner from '../components/Topbanner/TopBanner';
 import TopNavigation from '../components/TopNavigation/TopNavigation';
 import Video from '../components/Video/Video';
 import Footer from '../components/Footer/Footer';
+import Welcome from '../components/Welcome/Welcome';
 
 export class HomePage extends Component {
   render() {
     return (
       <>
-        <TopNavigation />
+        <TopNavigation title="Tempest" />
         <TopBanner />
+        <Welcome />
         <Services />
         <Analysis />
         <Summary />

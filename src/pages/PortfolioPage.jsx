@@ -8,7 +8,7 @@ export class PortfolioPage extends Component {
   render() {
     return (
       <>
-        <TopNavigation />
+        <TopNavigation title="Our Portfolio" />
         <PageTop pagetitle="Our Portfolio" />
         <AllProjects />
         <Footer />

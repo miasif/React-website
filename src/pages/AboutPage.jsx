@@ -9,7 +9,7 @@ export class AboutPage extends Component {
   render() {
     return (
       <>
-        <TopNavigation />
+        <TopNavigation title="About Us" />
         <PageTop pagetitle="About Us" />
         <AboutMe />
         <AboutDescription />

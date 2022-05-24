@@ -9,7 +9,7 @@ export class AllServicePage extends Component {
   render() {
     return (
       <>
-        <TopNavigation />
+        <TopNavigation title="All Services" />
         <PageTop pagetitle="All Services" />
         <Services />
         <ContactSection />
