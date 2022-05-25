@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Button, Card, Col, Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 export class AllProjects extends Component {
   render() {
@@ -23,7 +24,12 @@ export class AllProjects extends Component {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </Card.Text>
-                  <Button variant="primary">Vist Webite</Button>
+                  <Button variant="primary">
+                    <Link className="link-style" to="/projectdetails">
+                      {' '}
+                      View Website{' '}
+                    </Link>{' '}
+                  </Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -41,7 +47,12 @@ export class AllProjects extends Component {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </Card.Text>
-                  <Button variant="primary">Vist Webite</Button>
+                  <Button variant="primary">
+                    <Link className="link-style" to="/projectdetails">
+                      {' '}
+                      View Website{' '}
+                    </Link>{' '}
+                  </Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -59,7 +70,12 @@ export class AllProjects extends Component {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </Card.Text>
-                  <Button variant="primary">Vist Webite</Button>
+                  <Button variant="primary">
+                    <Link className="link-style" to="/projectdetails">
+                      {' '}
+                      View Website{' '}
+                    </Link>{' '}
+                  </Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -78,7 +94,12 @@ export class AllProjects extends Component {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </Card.Text>
-                  <Button variant="primary">Vist Webite</Button>
+                  <Button variant="primary">
+                    <Link className="link-style" to="/projectdetails">
+                      {' '}
+                      View Website{' '}
+                    </Link>{' '}
+                  </Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -96,7 +117,12 @@ export class AllProjects extends Component {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </Card.Text>
-                  <Button variant="primary">Vist Webite</Button>
+                  <Button variant="primary">
+                    <Link className="link-style" to="/projectdetails">
+                      {' '}
+                      View Website{' '}
+                    </Link>{' '}
+                  </Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -114,7 +140,12 @@ export class AllProjects extends Component {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </Card.Text>
-                  <Button variant="primary">Vist Webite</Button>
+                  <Button variant="primary">
+                    <Link className="link-style" to="/projectdetails">
+                      {' '}
+                      View Website{' '}
+                    </Link>{' '}
+                  </Button>
                 </Card.Body>
               </Card>
             </Col>

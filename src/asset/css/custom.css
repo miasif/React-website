@@ -446,3 +446,12 @@ a.twitter {
   color: #051b35;
   font-size: 16px;
 }
+
+.link-style {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+.link-style:hover {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
