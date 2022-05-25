@@ -24,7 +24,7 @@ class Welcome extends Component {
                       learning community
                     </h2>
 
-                    <Container>
+                    <Container className="text-center mt-5">
                       <Row>
                         <Col lg={4} md={6} sm={12}>
                           <img src={pageone} alt="" />
@@ -50,6 +50,61 @@ class Welcome extends Component {
                           <p className="serviceDescription">
                             Lorem ipsum dolor
                           </p>
+                        </Col>
+                      </Row>
+
+                      {/* // Intro Footer Start  */}
+
+                      <Row className="intro-footer bg-base text-center mt-5">
+                        <Col lg={4} md={6} sm={12}>
+                          <Row>
+                            <Col lg={6} md={6} sm={12}>
+                              <img className="sideImg" src={imgone} alt="" />
+                            </Col>
+
+                            <Col lg={6} md={6} sm={12}>
+                              <h5 className="text-justify homeIntro">
+                                Development
+                              </h5>
+                              <p className="text-justify serviceDescription">
+                                Lorem ipsum dolor
+                              </p>
+                            </Col>
+                          </Row>
+                        </Col>
+
+                        <Col lg={4} md={6} sm={12}>
+                          <Row>
+                            <Col lg={6} md={6} sm={12}>
+                              <img className="sideImg" src={imgtwo} alt="" />
+                            </Col>
+
+                            <Col lg={6} md={6} sm={12}>
+                              <h5 className="text-justify homeIntro">
+                                Web Design
+                              </h5>
+                              <p className="text-justify serviceDescription">
+                                Lorem ipsum dolor
+                              </p>
+                            </Col>
+                          </Row>
+                        </Col>
+
+                        <Col lg={4} md={6} sm={12}>
+                          <Row>
+                            <Col lg={6} md={6} sm={12}>
+                              <img className="sideImg" src={imgthree} alt="" />
+                            </Col>
+
+                            <Col lg={6} md={6} sm={12}>
+                              <h5 className="text-justify homeIntro">
+                                Ecommerce
+                              </h5>
+                              <p className="text-justify serviceDescription">
+                                Lorem ipsum dolor
+                              </p>
+                            </Col>
+                          </Row>
                         </Col>
                       </Row>
                     </Container>
