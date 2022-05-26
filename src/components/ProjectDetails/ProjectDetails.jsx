@@ -7,7 +7,11 @@ class ProjectDetails extends Component {
       <Fragment>
         <Container>
           <Row>
-            <Col>
+            <Col lg={6} md={6} sm={12}>
+              <h1>Project Details </h1>
+            </Col>
+
+            <Col lg={6} md={6} sm={12}>
               <h1>Project Details </h1>
             </Col>
           </Row>

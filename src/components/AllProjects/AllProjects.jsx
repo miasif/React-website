@@ -26,9 +26,8 @@ export class AllProjects extends Component {
                   </Card.Text>
                   <Button variant="primary">
                     <Link className="link-style" to="/projectdetails">
-                      {' '}
-                      View Website{' '}
-                    </Link>{' '}
+                      View Website
+                    </Link>
                   </Button>
                 </Card.Body>
               </Card>
@@ -49,9 +48,8 @@ export class AllProjects extends Component {
                   </Card.Text>
                   <Button variant="primary">
                     <Link className="link-style" to="/projectdetails">
-                      {' '}
-                      View Website{' '}
-                    </Link>{' '}
+                      View Website
+                    </Link>
                   </Button>
                 </Card.Body>
               </Card>
@@ -72,9 +70,8 @@ export class AllProjects extends Component {
                   </Card.Text>
                   <Button variant="primary">
                     <Link className="link-style" to="/projectdetails">
-                      {' '}
-                      View Website{' '}
-                    </Link>{' '}
+                      View Website
+                    </Link>
                   </Button>
                 </Card.Body>
               </Card>
@@ -96,9 +93,8 @@ export class AllProjects extends Component {
                   </Card.Text>
                   <Button variant="primary">
                     <Link className="link-style" to="/projectdetails">
-                      {' '}
-                      View Website{' '}
-                    </Link>{' '}
+                      View Website
+                    </Link>
                   </Button>
                 </Card.Body>
               </Card>
@@ -119,9 +115,8 @@ export class AllProjects extends Component {
                   </Card.Text>
                   <Button variant="primary">
                     <Link className="link-style" to="/projectdetails">
-                      {' '}
-                      View Website{' '}
-                    </Link>{' '}
+                      View Website
+                    </Link>
                   </Button>
                 </Card.Body>
               </Card>
@@ -142,9 +137,8 @@ export class AllProjects extends Component {
                   </Card.Text>
                   <Button variant="primary">
                     <Link className="link-style" to="/projectdetails">
-                      {' '}
-                      View Website{' '}
-                    </Link>{' '}
+                      View Website
+                    </Link>
                   </Button>
                 </Card.Body>
               </Card>
