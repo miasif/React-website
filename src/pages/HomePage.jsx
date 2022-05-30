@@ -13,6 +13,9 @@ import Footer from '../components/Footer/Footer';
 import Welcome from '../components/Welcome/Welcome';
 
 export class HomePage extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <>

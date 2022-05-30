@@ -4,6 +4,7 @@ import AboutPage from '../pages/AboutPage';
 import AllCoursePage from '../pages/AllCoursePage';
 import AllServicePage from '../pages/AllServicePage';
 import ContactPage from '../pages/ContactPage';
+import CourseDetailsPage from '../pages/CourseDetailsPage';
 import HomePage from '../pages/HomePage';
 import PortfolioPage from '../pages/PortfolioPage';
 import PrivacyPage from '../pages/PrivacyPage';
@@ -26,6 +27,7 @@ class AppRouter extends Component {
           <Route exact path="/terms" component={TermsPage} />
           <Route exact path="/privacy" component={PrivacyPage} />
           <Route exact path="/projectdetails" component={ProjectDetailPage} />
+          <Route exact path="/coursedetails" component={CourseDetailsPage} />
         </Switch>
       </Fragment>
     );

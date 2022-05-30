@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 export class Courses extends Component {
   render() {
@@ -25,9 +26,12 @@ export class Courses extends Component {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a className="courseViewMore float-left" href="/courses">
+                  <Link
+                    className="courseViewMore float-left"
+                    to="/coursedetails"
+                  >
                     View Details
-                  </a>
+                  </Link>
                 </Col>
 
                 <Col lg={6} md={6} sm={12} className="p-2">
@@ -44,9 +48,12 @@ export class Courses extends Component {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a className="courseViewMore float-left" href="/courses">
+                  <Link
+                    className="courseViewMore float-left"
+                    to="/coursedetails"
+                  >
                     View Details
-                  </a>
+                  </Link>
                 </Col>
               </Row>
             </Col>
@@ -67,9 +74,12 @@ export class Courses extends Component {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a className="courseViewMore float-left" href="/courses">
+                  <Link
+                    className="courseViewMore float-left"
+                    to="/coursedetails"
+                  >
                     View Details
-                  </a>
+                  </Link>
                 </Col>
 
                 <Col lg={6} md={6} sm={12} className="p-2">
@@ -86,9 +96,12 @@ export class Courses extends Component {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a className="courseViewMore float-left" href="/courses">
+                  <Link
+                    className="courseViewMore float-left"
+                    to="/coursedetails"
+                  >
                     View Details
-                  </a>
+                  </Link>
                 </Col>
               </Row>
             </Col>

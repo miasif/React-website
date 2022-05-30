@@ -6,6 +6,9 @@ import Services from '../components/Services/Services';
 import TopNavigation from '../components/TopNavigation/TopNavigation';
 
 export class AllServicePage extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <>
