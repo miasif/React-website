@@ -1,7 +1,25 @@
 import React, { Component, Fragment } from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
+import AppUrl from '../../RestApi/AppUrl';
+import RestClient from '../../RestApi/RestClient';
 
 class TopBanner extends Component {
+  constructor() {
+    super();
+    this.state = {
+      title: '',
+      subTitle: '',
+    };
+  }
+  componentDidMount() {
+    RestClient.GetRequest(AppUrl.HomeTopTitle).then((result) => {
+      this.setState({
+        title: result[0].home_title,
+        subTitle: result[0].home_subtitle,
+      });
+    });
+  }
+
   render() {
     return (
       <Fragment>
@@ -10,8 +28,8 @@ class TopBanner extends Component {
             <Container className="topContent">
               <Row>
                 <Col className="text-center">
-                  <h1 className="topTitle">Tempest</h1>
-                  <h4 className="topSubTitle">Learn Profesionaly</h4>
+                  <h1 className="topTitle">{this.state.title}</h1>
+                  <h4 className="topSubTitle">{this.state.subTitle}</h4>
                   <Button variant="primary">Learn More</Button>
                 </Col>
               </Row>
