@@ -3,8 +3,23 @@ import { Col, Container, Row } from 'react-bootstrap';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
+import AppUrl from '../../RestApi/AppUrl';
+import RestClient from '../../RestApi/RestClient';
 
 export class ClientReview extends Component {
+  constructor() {
+    super();
+    this.state = {
+      myData: [],
+    };
+  }
+  componentDidMount() {
+    RestClient.GetRequest(AppUrl.ClientReview).then((result) => {
+      this.setState({
+        myData: result,
+      });
+    });
+  }
   render() {
     var settings = {
       autoPlaySpeed: 500,
@@ -46,72 +61,27 @@ export class ClientReview extends Component {
       ],
     };
 
+    const myList = this.state.myData;
+
+    const myView = myList.map((myList) => {
+      return (
+        <div>
+          <Row className="text-center justify-content-center">
+            <Col lg={6} md={6} sm={12}>
+              <img className="circleImg" src={myList.client_image} alt="" />
+              <h2 className="reviewName">{myList.client_title}</h2>
+              <p className="reviewDescription">{myList.client_description}</p>
+            </Col>
+          </Row>
+        </div>
+      );
+    });
     return (
       <Fragment>
         <Container fluid={true} className="sliderBack">
           <h1 className="text-center reviewMainTitle p-3">TESTIMONIAL</h1>
           <div className="reviewButton"></div>
-          <Slider {...settings}>
-            <div>
-              <Row className="text-center justify-content-center">
-                <Col lg={6} md={6} sm={12}>
-                  <img
-                    className="circleImg"
-                    src="https://img.freepik.com/free-photo/pleasant-looking-serious-man-stands-profile-has-confident-expression-wears-casual-white-t-shirt_273609-16959.jpg?t=st=1653201400~exp=1653202000~hmac=47b9f30ca19c097bb7aaea30c32b03870b68768112211db8d2107fc18b9b6113&w=996"
-                    alt=""
-                  />
-                  <h2 className="reviewName">Asif</h2>
-                  <p className="reviewDescription">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
-                  </p>
-                </Col>
-              </Row>
-            </div>
-
-            <div>
-              <Row className="text-center justify-content-center">
-                <Col lg={6} md={6} sm={12}>
-                  <img
-                    className="circleImg"
-                    src="https://img.freepik.com/free-photo/portrait-dark-skinned-confident-man-with-curly-afro-hairstyle-has-calm-face-expression_273609-8520.jpg?w=1380&t=st=1653208756~exp=1653209356~hmac=2e91c50b12ab099501bcc4e1ac1990d16c589044ecd9266264df2aee96508cf4"
-                    alt=""
-                  />
-                  <h2 className="reviewName">Saif</h2>
-                  <p className="reviewDescription">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
-                  </p>
-                </Col>
-              </Row>
-            </div>
-
-            <div>
-              <Row className="text-center justify-content-center">
-                <Col lg={6} md={6} sm={12}>
-                  <img
-                    className="circleImg"
-                    src="https://img.freepik.com/free-photo/young-african-man-looking-camera-standing-outdoors_325573-784.jpg?w=1380"
-                    alt=""
-                  />
-                  <h2 className="reviewName">Mike</h2>
-                  <p className="reviewDescription">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
-                  </p>
-                </Col>
-              </Row>
-            </div>
-          </Slider>
+          <Slider {...settings}>{myView}</Slider>
         </Container>
       </Fragment>
     );

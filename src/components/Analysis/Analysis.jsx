@@ -1,22 +1,25 @@
 import React, { Component, Fragment } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis } from 'recharts';
+import AppUrl from '../../RestApi/AppUrl';
+import RestClient from '../../RestApi/RestClient';
+import parse from 'html-react-parser';
 
 class Analysis extends Component {
   constructor() {
     super();
     this.state = {
-      data: [
-        { Techonology: 'React', Projects: 100 },
-        { Techonology: 'Angular', Projects: 90 },
-        { Techonology: 'Node', Projects: 95 },
-        { Techonology: 'MongoDB', Projects: 85 },
-        { Techonology: 'Express', Projects: 80 },
-        { Techonology: 'Bootstrap', Projects: 70 },
-        { Techonology: 'HTML', Projects: 80 },
-        { Techonology: 'CSS', Projects: 60 },
-      ],
+      data: [],
+      techdesc: '',
     };
+  }
+  componentDidMount() {
+    RestClient.GetRequest(AppUrl.ChartData).then((result) => {
+      this.setState({ data: result });
+    });
+    RestClient.GetRequest(AppUrl.TechHomeDesc).then((result) => {
+      this.setState({ techdesc: result[0]['tech_description'] });
+    });
   }
 
   render() {
@@ -44,20 +47,7 @@ class Analysis extends Component {
 
             <Col lg={6} md={12} sm={12}>
               <p className="text-justify serviceDescription">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-                <br></br>
-                <br></br>
-                It has survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged.
-                <br></br>
-                <br></br>
-                It was popularised in the 1960s with the release of Letraset
-                sheets containing Lorem Ipsum passages, and more recently with
-                desktop publishing software like Aldus PageMaker including
-                versions of Lorem Ipsum.
+                {parse(this.state.techdesc)}
               </p>
             </Col>
           </Row>
